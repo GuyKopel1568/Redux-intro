@@ -76,7 +76,7 @@ const store = createStore(rootReducer);
 // store.dispatch({ type: "account/payLoan" });
 // console.log(store.getState());
 
-function deposite(amount) {
+function deposit(amount) {
   return { type: "account/deposit", payload: amount };
 }
 
@@ -95,7 +95,7 @@ function payLoan() {
   return { type: "account/payLoan" };
 }
 
-store.dispatch(deposite(200));
+store.dispatch(deposit(200));
 console.log(store.getState());
 
 store.dispatch(withdraw(100));

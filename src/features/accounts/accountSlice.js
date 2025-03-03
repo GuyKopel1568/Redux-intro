@@ -31,7 +31,7 @@ export default function AccountReducer(state = initialStateAccount, action) {
   }
 }
 
-export function deposite(amount) {
+export function deposit(amount) {
   return { type: "account/deposit", payload: amount };
 }
 
